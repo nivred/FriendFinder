@@ -11,11 +11,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
-
   <div class="container">
-
     <h2 id="survey">Survey Questions</h2>
     <hr>
 
@@ -50,7 +47,6 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-
     <h3><strong>Question 3</strong></h3>
     <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
     <select class="chosen-select" id="q3">
@@ -61,7 +57,6 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
 
     <h3><strong>Question 4</strong></h3>
     <h4>You rarely do something just out of sheer curiosity.</h4>
@@ -74,7 +69,6 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-
     <h3><strong>Question 5</strong></h3>
     <h4>People can rarely upset you.</h4>
     <select class="chosen-select" id="q5">
@@ -86,7 +80,6 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-
     <h3><strong>Question 6</strong></h3>
     <h4>It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="chosen-select" id="q6">
@@ -97,7 +90,6 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
 
     <h3><strong>Question 7</strong></h3>
     <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
@@ -147,8 +139,8 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+    <i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
 
     <hr>
     <footer class="footer">
@@ -200,7 +192,7 @@
     };
 
     for (var selector in config) {
-      $(selector).chosen(config[selector]);
+      // $(selector).chosen(config[selector]);
     }
 
     // Capture the form inputs
@@ -252,6 +244,9 @@
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
+          $("#name").text(userData.name);
+          $("#photo").attr("src", userData.photo);
+
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
 
@@ -261,6 +256,5 @@
       }
     });
   </script>
-
 </body>
 </html>
