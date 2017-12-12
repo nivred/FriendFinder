@@ -12,7 +12,7 @@ var PORT = process.env.PORT || 3000;
 
 // Serve static files
 // app.use(express.static(path.join(__dirname, './app/assets')))
-app.use(express.static('app/assets'));
+app.use(express.static('./app/assets'));
 
 // Set up Express App for data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
