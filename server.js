@@ -9,6 +9,11 @@ var app = express();
 // Set up PORT
 var PORT = process.env.PORT || 3000;
 // C:\Users\bestbuy\Desktop\FriendFinder\app
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
 
 // Serve static files
 // app.use(express.static(path.join(__dirname, './app/assets')))
