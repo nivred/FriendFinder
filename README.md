@@ -1,2 +1,2 @@
 # FriendFinder
-Heroku and Node.js dating app
+Friend matchmaking Node Express app
