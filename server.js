@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-
 // Serve static files
 // app.use(express.static(path.join(__dirname, './app/assets')))
 app.use(express.static('./app/assets'));

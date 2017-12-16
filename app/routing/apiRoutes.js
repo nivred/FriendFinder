@@ -21,7 +21,6 @@ module.exports = function(app) {
 			}
 			if (minVal > result) {
 				minVal = result;
-				console.log(".............\n", friendIndex);
 				friendIndex = j;
 			}
 		}
